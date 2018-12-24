@@ -1,0 +1,79 @@
+<resources>
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- chat_left_item -->
+    <dimen name="chat_tv_date_textSize">10sp</dimen>
+    <dimen name="chat_tv_content_textSize">18sp</dimen>
+    <dimen name="chat_llt_magin_max">40dp</dimen>
+    <dimen name="chat_llt_magin_min">10dp</dimen>
+    <!-- viewPager_voice -->
+    <dimen name="voice_llt_bottom_height">70dp</dimen>
+    <dimen name="voice_iv_voice_anim">55dp</dimen>
+    <dimen name="voice_llt_bottom_height1">90dp</dimen>
+    <dimen name="part_voice_width">15dp</dimen>
+    <dimen name="part_voice_height">15dp</dimen>
+      <!-- viewPager_text -->
+    <dimen name="text_tv_send_height">45dp</dimen>
+    <dimen name="text_tv_send_width">60dp</dimen>
+    <dimen name="text_tv_send_textSize">20sp</dimen>
+    <dimen name="text_et_send_textSize">19sp</dimen>
+      <!-- activity_alarm -->
+    <dimen name="iv_back_magin">5dp</dimen>
+    <dimen name="vi_line_height">0.1dp</dimen>
+    <dimen name="vi_line_magin">10dp</dimen>
+    <dimen name="vi_line_padding">5dp</dimen>
+    <dimen name="alarm_title_textSize">19sp</dimen>
+    <dimen name="alarm_conlumn_textSize">16sp</dimen>
+    <dimen name="alarm_conlumn_magin">10dp</dimen>
+    <dimen name="alarm_conlumn_tb_height">30dp</dimen>
+    <dimen name="alarm_conlumn_tb_width">55dp</dimen>
+    <dimen name="alarm_conlumn_tb_maginRight">10dp</dimen>
+    <!-- food_item -->
+     <dimen name="food_item_iv_image_height">60dp</dimen>
+     <dimen name="food_item_iv_image_width">60dp</dimen>
+     <dimen name="food_item_iv_image_magin">10dp</dimen>
+     <dimen name="food_item_iv_foodname_textSize">18sp</dimen>
+     <dimen name="food_item_iv_evaluate_textSize">12sp</dimen>
+     <dimen name="food_item_iv_evaluate_width">15dp</dimen>
+     <dimen name="food_item_iv_evaluate_height">15dp</dimen>
+     <dimen name="food_item_iv_address_textSize">13sp</dimen>
+     <dimen name="food_item_iv_distance_textSize">12sp</dimen>
+     <dimen name="food_listview_magin">10dp</dimen>
+     <dimen name="food_listview_hit_textSize">18sp</dimen>
+    <!-- flight_item -->
+    <!-- item_location -->
+    <dimen name="item_location_iv_image_height">30dp</dimen>
+    <dimen name="item_location_iv_image_width">30dp</dimen>
+    <dimen name="item_location_tv_area_textSize">15sp</dimen>
+     <dimen name="item_location_tv_name_textSize">18sp</dimen>
+     <!-- item_route -->
+     <dimen name="item_route_tv_name_textSize">18sp</dimen>
+     <dimen name="item_route_tv_name_magin">10dp</dimen>
+     <dimen name="item_route_tv_content_textSize">13sp</dimen>
+     <dimen name="item_route_tv_station_paddind">2dp</dimen>
+     <dimen name="item_route_lly_station_magin">5dp</dimen>
+    <!-- Toolbar Padding -->
+    <dimen name="tool_bar_top_padding">0dp</dimen>
+    <dimen name="tool_bar_top_height">60dp</dimen>
+    <!-- item_bus -->
+     <dimen name="item_bus_line_height">40dp</dimen>
+     <dimen name="item_bus_line_short_height">10dp</dimen>
+      <dimen name="item_bus_line_maginLeft">31.5dp</dimen>
+     <dimen name="item_bus_line_maginRight">31.5dp</dimen>
+     <dimen name="item_bus_walk_magin_top">35dp</dimen>
+     <dimen name="item_bus_maginLeft">20dp</dimen>
+     <dimen name="item_bus_maginRight">20dp</dimen>
+     <dimen name="item_bus_bus_width">25dp</dimen>
+     <dimen name="item_bus_bus_height">25dp</dimen>
+      <dimen name="item_bus_station_maginLeft">25dp</dimen>
+      <dimen name="item_bus_station_maginRight">24dp</dimen>
+     <dimen name="item_bus_station_width">15dp</dimen>
+     <dimen name="item_bus_station_height">15dp</dimen>
+     <dimen name="item_bus_textsize">18sp</dimen>
+     <!-- item_Kline -->
+      <dimen name="item_stock_name_textSize">18sp</dimen>
+       <dimen name="item_stock_code_textSize">16sp</dimen>
+       <dimen name="item_stock_today_price_maginLeft">150dp</dimen>
+</resources>

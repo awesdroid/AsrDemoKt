@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/page_home"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/cardview_dark_background"
+              tools:context="io.awesdroid.asrdemokt.ui.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_spectrum"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+            android:layout_weight="1">
+
+
+            <io.awesdroid.asrdemokt.ui.VoiceSpectrum
+                    android:id="@+id/spectrum_voice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foregroundGravity="center"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/tv_asr"
+            android:paddingBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/please_start_talking"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            />
+
+
+</LinearLayout>

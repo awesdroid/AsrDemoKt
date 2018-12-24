@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AsrDemoKt</string>
+    <string name="item_home">Home</string>
+    <string name="item_chat">Chat</string>
+    <string name="please_start_talking">waiting…</string>
+    <string name="rationale_audio">This app needs access to your microphone to listen to your voice.</string>
+    <string name="returned_from_app_settings">Microphone Permissions Status: %s
+    </string>
+</resources>
