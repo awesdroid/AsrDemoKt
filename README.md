@@ -10,6 +10,46 @@ The app is not able to run directly because the library uses a dedicated credent
 Google account. Therefore it's not encouraged to put this credential on open source code, you should store it on
 a private storage to fetch instead.
 
+# Run app
+The fastest way to run the app is
+- Step 1: Put your GCS project confidential (xxx.json) on a Github private repository
+- Step 2: Add following account access info into `res/raw/account.json`
+    ```json
+    {
+      "user": "YOUR_GITHUB_USER_NAME",
+      "password": "YOUR_GITHUB_PASSWORD",
+      "baseUrl": "https://api.github.com/",
+      "path": "credential/contents/YOUR_REPOSITORY/xxx.json"
+    }
+    ```
+
+or
+
+- Step 1: Put your GCS project confidential into `res/raw/xxx.json`
+- Step 2: Change `MyDatabase.kt` as below
+    ```kotlin
+    private fun buildDatabase(context: Context): MyDatabase {
+                return Room.databaseBuilder(context, MyDatabase::class.java, DB_NAME)
+                    .addCallback(object : RoomDatabase.Callback() {
+                        override fun onCreate(db: SupportSQLiteDatabase) {
+                            super.onCreate(db)
+                            Log.d(TAG, "onCreate(): db = " + context.getDatabasePath(DB_NAME))
+                            Observable.just(R.raw.xxx)
+                                .observeOn(Schedulers.io())
+                                .map<InputStream> { id -> context.resources.openRawResource(id!!) }
+                                .map { s -> InputStreamReader(s, "UTF-8") }
+                                .map { isr -> CharStreams.toString(isr) }
+                                .map(::CredentialEntity)
+                                .subscribe { credentialEntity ->
+                                    instance!!.runInTransaction {
+                                        instance!!.credentialDao().insertCredential(credentialEntity)
+                                    }
+                                }
+                        }
+                    })
+                    .build()
+            }
+    ```
 
 ## License
 Copyright Awesdroid 2018
